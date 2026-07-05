@@ -5,21 +5,21 @@
 class Council < Formula
   desc "AI Council Orchestrator — run multiple AI agent CLIs in parallel for planning & critique consensus."
   homepage "https://github.com/alijamal14/council"
-  version "1.2.1"
+  version "1.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alijamal14/council/releases/download/v1.2.1/council_darwin_x86_64.tar.gz"
-      sha256 "74ed97fdfbba5c6663f4d85e2bd0f36f6f751cfd66889e3a41436f4744c049dc"
+      url "https://github.com/alijamal14/council/releases/download/v1.3.0/council_darwin_x86_64.tar.gz"
+      sha256 "69168066009b4c3c05dfee04ebe7f0dfd42977a0bf289fd8e4963b4aaac432b9"
 
       define_method(:install) do
         bin.install "council"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alijamal14/council/releases/download/v1.2.1/council_darwin_aarch64.tar.gz"
-      sha256 "8b3e29d8f55691f3969e24702e6553acd85abccc81b5ecb24368c14126b7105c"
+      url "https://github.com/alijamal14/council/releases/download/v1.3.0/council_darwin_aarch64.tar.gz"
+      sha256 "ed64703c82687bb54690642d994444097a8f5ebc195e906882b6891c65c6421c"
 
       define_method(:install) do
         bin.install "council"
@@ -29,15 +29,15 @@ class Council < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alijamal14/council/releases/download/v1.2.1/council_linux_x86_64.tar.gz"
-      sha256 "c8661ee76c5ac1353c4d298315b826d9ab23b38b452ad45450ca2504c663ef13"
+      url "https://github.com/alijamal14/council/releases/download/v1.3.0/council_linux_x86_64.tar.gz"
+      sha256 "2189fed6a9b076dcf57990dbdaa1d617d6c01f033e4387096abf56e2f2c9e6c6"
       define_method(:install) do
         bin.install "council"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alijamal14/council/releases/download/v1.2.1/council_linux_aarch64.tar.gz"
-      sha256 "ba9daf8411013e0507b81ac1216eea11a495893eb7c7c7291afcdb2b95c10792"
+      url "https://github.com/alijamal14/council/releases/download/v1.3.0/council_linux_aarch64.tar.gz"
+      sha256 "f6d8898490a3ac8d664015d795f25175c84ce48bcc92fcee9af1a6f2c4b3ea37"
       define_method(:install) do
         bin.install "council"
       end
